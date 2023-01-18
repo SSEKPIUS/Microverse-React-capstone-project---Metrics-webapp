@@ -19,8 +19,8 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <nav className="nav">
-      <div className="nav_div nav_div-left">
+    <nav className="w-full flex flex-row gap-0 pt-4 pb-4">
+      <div className="basis-2/6 pl-3 font-semibold text-lg">
         {navPosition === 0
           ? <span>{(new Date()).getFullYear()}</span>
           : (
@@ -29,14 +29,14 @@ const Navbar = () => {
             </span>
           )}
       </div>
-      <div className="nav_div nav_div-center">
+      <div className="basis-2/6 text-center capitalize text-lg">
         {navPosition === 0
           ? <span>most views</span>
           : <span>town/city views</span>}
       </div>
-      <div className="nav_div nav_div-right">
-        <div>
-          <span><Mic /></span>
+      <div className="basis-2/6 pr-3">
+        <div className="ml-auto mr-0 max-w-fit flex">
+          <span className="pr-4"><Mic /></span>
           <span><Settings /></span>
         </div>
       </div>

@@ -1,6 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   box-sizing: border-box;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 400;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -10,59 +14,13 @@ html {
 body {
   overflow-x: hidden;
   position: relative;
-  background-color: rgba(252,81,147,255);
+  background-color: rgba(252, 81, 147, 255);
 }
 
 * {
-  padding: 0;
-  margin: 0;
-}
-
-.visible {
-  display: block;
-}
-
-.hidden {
-  display: none;
+  @apply p-0;
 }
 
 nav {
-  width: 100%;
   background-color: rgba(0, 0, 0, 0.076);
-  display: flex;
-  flex-direction: row;
-  gap: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.nav_div {
-  flex-basis: 33.3%;
-}
-
-.nav_div-left {
-  padding-left: 10px;
-  font-weight: 500;
-  font-size: 1.3rem;
-}
-
-.nav_div-center {
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 1.2rem;
-  
-}
-
-.nav_div-right {
-  padding-right: 10px;
-}
-
-.nav_div-right > div {
-  margin-left: auto;
-  margin-right: 0;
-  max-width: fit-content;
-}
-
-.nav_div-right > div > span:first-child {
-  padding-right: 1rem;
 }
