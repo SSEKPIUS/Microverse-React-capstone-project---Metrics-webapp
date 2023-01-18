@@ -1,5 +1,6 @@
 # Microverse-WebPack-Template
-React, virtual DOM, how React uses the virtual DOM. Git/GitHub flow, webpack, linters, and workflows.
+Metrics webapp, 
+This React capstone project is about building a mobile web application to check a list of metrics (numeric values) that we will create making use of React and Redux.
 
 <a name="readme-top"> </a>
 
@@ -62,19 +63,16 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [your_project_name] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> API that provides numeric data about a topic that i like and then build the webapp around it. The webapp will have several pages:
 
-**[your_project__name]** is a...
+one page with a list of items that could be filtered by some parameters; in the example below, it's a list of metrics that can be filtered by the country (imagine a search field to introduce the country name like Italy, Croatia, etc.). This page should be your homepage.
+one page for the item details; in the example, the detail page for Czech Republic cities with number of views.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> LAMP Stack (Linux, Apache, MySQL, PHP)
-
-> MEAN Stack (MongoDB, Express.js, Angular.js, Node.js)
-
-> MERN Stack (MongoDB, Express.js, React.js, Node.js)
+ React.js, Node.js, Reduxt.js, CSS
 
 <details>
   <summary>Client</summary>
@@ -83,29 +81,15 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> Key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Retrive list of countries]**
+- **[Get weather data based on the selected country]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,7 +169,7 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+> collaborators of this project.
 
 👤 **Author 1**
 
@@ -195,8 +179,6 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/SSEK_PIUS)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/pius-ssekweyama-23665794)
 
-👤 **Author 2*
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -204,11 +186,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+>features i will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[weather for cities]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
