@@ -6,7 +6,7 @@ import {
 import Error from './components/Error';
 import Navbar from './components/Nav';
 import City from './components/City';
-import Cities from './Cities';
+import Cities from './components/Cities';
 
 function App() {
   return (
