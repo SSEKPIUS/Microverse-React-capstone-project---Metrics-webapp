@@ -10,7 +10,6 @@ const CitiesList = () => {
   }, [zones]);
 
   const shade = [false, 0];
-  // const toggle = [0];
   let start = true;
   const getShade = () => {
     if (start) {
@@ -36,25 +35,25 @@ const CitiesList = () => {
         >
           <div
             style={{
-              backgroundImage: `url("${img09}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', filter: 'blur(2px)',
+              backgroundImage: `url("${img09}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', filter: 'blur(0px)',
             }}
             className=" w-full h-full"
           />
           <div
-            className="absolute top-0 left-0 w-full h-full flex flex-col gap-1 items-center justify-center text-white"
+            className="absolute top-0 left-0 w-full h-full flex flex-col gap-1 items-end justify-end text-white pb-2"
             onClick={() => { navigate('/city', { state: { lat: zone.lat, lon: zone.lon, name: zone.name } }); }}
             aria-hidden="true"
           >
-            <span className=" font-extrabold text-xl text-gray-700">{zone.name}</span>
-            <span>
+            <span className=" font-extrabold text-xl text-gray-100 mr-2 shadow-sm drop-shadow-lg shadow-black">{zone.name}</span>
+            <span className="mr-2">
               {zone.country}
             </span>
-            <span>
-              <span className=" text-black capitalize">lat:</span>
+            <span className="mr-2">
+              <span className=" text-black capitalize mr-2">lat:</span>
               {zone.lat}
             </span>
-            <span>
-              <span className=" text-black capitalize">lon:</span>
+            <span className="mr-2">
+              <span className=" text-black capitalize mr-2">lon:</span>
               {zone.lon}
             </span>
           </div>
