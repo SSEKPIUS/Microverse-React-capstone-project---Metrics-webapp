@@ -30,7 +30,6 @@ const CitiesList = () => {
               {zone.lat}
             </span>
             <span>
-              {' '}
               <span>lon:</span>
               {zone.lon}
             </span>
