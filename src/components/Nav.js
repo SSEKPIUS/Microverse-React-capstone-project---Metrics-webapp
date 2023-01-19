@@ -22,7 +22,12 @@ const Navbar = () => {
     <nav className="w-full flex flex-row gap-0 pt-4 pb-4">
       <div className="basis-2/6 pl-3 font-semibold text-lg">
         {navPosition === 0
-          ? <span>{(new Date()).getFullYear()}</span>
+          ? (
+            <span className=" flex justify-start items-center">
+              <ChevronLeft />
+              {(new Date()).getFullYear()}
+            </span>
+          )
           : (
             <span>
               <NavLink to="/cities"><ChevronLeft /></NavLink>

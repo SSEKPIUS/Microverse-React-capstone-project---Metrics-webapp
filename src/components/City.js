@@ -38,7 +38,7 @@ const City = () => {
           </div>
           <div className="flex">
             <span>latitude</span>
-            <span>{zone.coord && zone.coord.lat}</span>
+            <span className="ml-auto mr-2">{zone.coord && zone.coord.lat}</span>
           </div>
         </div>
 

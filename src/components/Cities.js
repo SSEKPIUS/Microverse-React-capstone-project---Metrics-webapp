@@ -58,6 +58,10 @@ const Cities = () => {
         </div>
       </div>
       <div className=" w-full">
+        <span className=" ml-2 text-gray-500s font-medium">
+          Zones BY Cities
+          <span className=" font-thin ml-2">(Sroll Right)</span>
+        </span>
         <CitiesList images={images} />
       </div>
     </div>
