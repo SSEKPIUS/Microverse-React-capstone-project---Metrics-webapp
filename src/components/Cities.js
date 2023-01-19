@@ -34,7 +34,6 @@ const Cities = () => {
   }, []);
 
   useEffect(() => {
-    console.log('zones updatd');
   }, [zones]);
 
   return (
@@ -47,11 +46,12 @@ const Cities = () => {
                 style={{
                   backgroundImage: `url("${images[Math.floor(Math.random() * images.length)]}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain',
                 }}
+                onClick={() => dispatch(getZones(cities[key]))}
                 className=" basis-1/2"
+                aria-hidden="true"
               />
               <div className=" font-bold text-2xl capitalize flex flex-col">
                 <span>{cities[key]}</span>
-                <input type="button" value="Select" className=" mt-auto mb-0 text-white text-sm cursor-pointer hover:text-gray-500" onClick={() => dispatch(getZones(cities[key]))} />
               </div>
             </div>
           ))}

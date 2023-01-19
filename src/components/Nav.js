@@ -31,8 +31,8 @@ const Navbar = () => {
       </div>
       <div className="basis-2/6 text-center capitalize text-lg">
         {navPosition === 0
-          ? <span>most views</span>
-          : <span>town/city views</span>}
+          ? <span className=" whitespace-nowrap">most views</span>
+          : <span className=" whitespace-nowrap">town/city views</span>}
       </div>
       <div className="basis-2/6 pr-3">
         <div className="ml-auto mr-0 max-w-fit flex">

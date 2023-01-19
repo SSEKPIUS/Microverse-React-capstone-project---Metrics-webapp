@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import fetchZones from './Fetch';
+import { fetchZones } from './Fetch';
 
 const GET_ZONES = 'Dragons/Dragons/GET_ZONES';
 
