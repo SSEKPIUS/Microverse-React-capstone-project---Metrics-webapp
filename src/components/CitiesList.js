@@ -9,13 +9,30 @@ const CitiesList = () => {
   useEffect(() => {
   }, [zones]);
 
+  const shade = [false, 0];
+  // const toggle = [0];
+  let start = true;
+  const getShade = () => {
+    if (start) {
+      start = false;
+      return 'striped';
+    }
+    if (shade[1] > 1) {
+      shade[0] = !shade[0];
+      shade[1] = -1;
+    }
+    shade[0] = shade[1] > 1 ? !shade[0] : shade[0];
+    shade[1] += 1;
+    return shade[0] === true ? 'striped' : '';
+  };
+
   return (
     <div className="flex flex-row flex-wrap gap-0 striped">
       {
       zones.map((zone, n) => (
         <div
           key={n}
-          className="w-1/2 md:w-2/6 lg:w-1/4 h-52 relative p-5"
+          className={`w-1/2 md:w-2/6 lg:w-1/4 h-52 relative p-5 ${getShade()}`}
         >
           <div
             style={{
