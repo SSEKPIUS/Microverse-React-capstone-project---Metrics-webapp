@@ -3,6 +3,6 @@ nav {
   background-color: rgba(0, 0, 0, 0.076);
 }
 
-.striped div:nth-child(even) {
+.striped {
   background-color: rgba(0, 0, 0, 0.076);
 }

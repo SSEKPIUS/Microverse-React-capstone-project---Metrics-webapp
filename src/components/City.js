@@ -28,97 +28,97 @@ const City = () => {
           <span className=" text-5xl font-extrabold text-gray-600 ">{name}</span>
         </div>
       </div>
-      <div>
+      <div className=" flex flex-col gap-3">
 
-        <div>
-          <div>Cordinates</div>
-          <div>
+        <div className=" striped pl-2 pr2 pb-2 pt-2">
+          <div className=" text-lg font-bold capitalize">Cordinates</div>
+          <div className="flex">
             <span>longitude</span>
-            <span>{zone.coord && zone.coord.lon}</span>
+            <span className="ml-auto mr-2">{zone.coord && zone.coord.lon}</span>
           </div>
-          <div>
+          <div className="flex">
             <span>latitude</span>
             <span>{zone.coord && zone.coord.lat}</span>
           </div>
         </div>
 
-        <div>
-          <div>weather</div>
-          <div>
+        <div className="pl-2 pr2 pb-2 pt-2">
+          <div className=" text-lg font-bold capitalize">weather</div>
+          <div className="flex">
             <span>main</span>
-            <span>{zone.weather && zone.weather[0].main}</span>
+            <span className="ml-auto mr-2">{zone.weather && zone.weather[0].main}</span>
           </div>
-          <div>
+          <div className="flex">
             <span>description</span>
-            <span>
+            <span className="ml-auto mr-2">
               {zone.weather && zone.weather[0].description}
             </span>
           </div>
         </div>
 
-        <div>
-          <div>base station</div>
-          <div>
+        <div className=" striped pl-2 pr2 pb-2 pt-2">
+          <div className=" text-lg font-bold capitalize">base station</div>
+          <div className="flex">
             <span>temperature</span>
-            <span>{zone.main && zone.main.temp}</span>
+            <span className="ml-auto mr-2">{zone.main && zone.main.temp}</span>
           </div>
-          <div>
+          <div className="flex">
             <span>feel</span>
-            <span>
+            <span className="ml-auto mr-2">
               {zone.main && zone.main.feels_like}
             </span>
           </div>
-          <div>
+          <div className="flex">
             <span>minimum temperature</span>
-            <span>
+            <span className="ml-auto mr-2">
               {zone.main && zone.main.temp_min}
             </span>
           </div>
-          <div>
+          <div className="flex">
             <span>maximum temperature</span>
-            <span>
+            <span className="ml-auto mr-2">
               {zone.main && zone.main.temp_max}
             </span>
           </div>
-          <div>
+          <div className="flex">
             <span>pressure</span>
-            <span>
+            <span className="ml-auto mr-2">
               {zone.main && zone.main.pressure}
             </span>
           </div>
-          <div>
+          <div className="flex">
             <span>humidity</span>
-            <span>
+            <span className="ml-auto mr-2">
               {zone.main && zone.main.humidity}
             </span>
           </div>
         </div>
 
-        <div>
-          <div>visibility</div>
-          <div>
+        <div className="pl-2 pr2 pb-2 pt-2">
+          <div className=" text-lg font-bold capitalize">visibility</div>
+          <div className="flex">
             <span>visible</span>
-            <span>{zone.visibility && zone.visibility}</span>
+            <span className="ml-auto mr-2">{zone.visibility && zone.visibility}</span>
           </div>
         </div>
 
-        <div>
-          <div>wind</div>
-          <div>
+        <div className=" striped pl-2 pr2 pb-2 pt-2">
+          <div className=" text-lg font-bold capitalize">wind</div>
+          <div className="flex">
             <span>speed</span>
-            <span>{zone.wind && zone.wind.speed}</span>
+            <span className="ml-auto mr-2">{zone.wind && zone.wind.speed}</span>
           </div>
-          <div>
+          <div className="flex">
             <span>degree</span>
-            <span>{zone.wind && zone.wind.deg}</span>
+            <span className="ml-auto mr-2">{zone.wind && zone.wind.deg}</span>
           </div>
         </div>
 
-        <div>
-          <div>clouds</div>
-          <div>
+        <div className="pl-2 pr2 pb-2 pt-2">
+          <div className=" text-lg font-bold capitalize">clouds</div>
+          <div className="flex">
             <span>cover</span>
-            <span>{zone.clouds && zone.clouds.all}</span>
+            <span className="ml-auto mr-2">{zone.clouds && zone.clouds.all}</span>
           </div>
         </div>
 

@@ -10,8 +10,9 @@ const CitiesList = () => {
   }, [zones]);
 
   return (
-    <div className="flex flex-row flex-wrap">
-      {zones.map((zone, n) => (
+    <div className="flex flex-row flex-wrap gap-0 striped">
+      {
+      zones.map((zone, n) => (
         <div
           key={n}
           className="w-1/2 md:w-2/6 lg:w-1/4 h-52 relative p-5"
@@ -23,7 +24,7 @@ const CitiesList = () => {
             className=" w-full h-full"
           />
           <div
-            className="absolute top-0 left-0 w-full h-full flex flex-col gap-1 items-center justify-center text-white "
+            className="absolute top-0 left-0 w-full h-full flex flex-col gap-1 items-center justify-center text-white"
             onClick={() => { navigate('/city', { state: { lat: zone.lat, lon: zone.lon, name: zone.name } }); }}
             aria-hidden="true"
           >
@@ -41,7 +42,8 @@ const CitiesList = () => {
             </span>
           </div>
         </div>
-      ))}
+      ))
+      }
     </div>
   );
 };
