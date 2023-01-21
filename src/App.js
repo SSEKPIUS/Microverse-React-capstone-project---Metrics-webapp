@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import {
-  BrowserRouter, Routes, Route, Navigate,
+  BrowserRouter, Routes, Route,
 } from 'react-router-dom';
 import Error from './components/Error';
 import Navbar from './components/Nav';
@@ -17,17 +17,12 @@ function App() {
       <div>
         <Routes>
           <Route
-            path="/"
-            exact
-            element={<Navigate to="/cities" replace />}
-          />
-          <Route
             path="/city"
             exact
             element={<City />}
           />
           <Route
-            path="/cities"
+            path="/"
             exact
             element={<Cities />}
           />

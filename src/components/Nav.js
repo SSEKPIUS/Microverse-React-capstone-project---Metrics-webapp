@@ -8,7 +8,7 @@ const Navbar = () => {
   const [navPosition, setNavPosition] = useState(0);
   useEffect(() => {
     switch (location.pathname) {
-      case '/cities':
+      case '/':
         setNavPosition(0);
         break;
       case '/city':
@@ -30,7 +30,7 @@ const Navbar = () => {
           )
           : (
             <span>
-              <NavLink to="/cities"><ChevronLeft /></NavLink>
+              <NavLink to="/"><ChevronLeft /></NavLink>
             </span>
           )}
       </div>
