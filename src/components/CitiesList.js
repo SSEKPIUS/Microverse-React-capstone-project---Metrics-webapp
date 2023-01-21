@@ -9,8 +9,8 @@ import img09 from './images/09.png';
 const CitiesList = () => {
   const navigate = useNavigate();
   const { zones } = useSelector((state) => state.zones);
-  useEffect(() => {
-  }, [zones]);
+  // useEffect(() => {
+  // }, [zones]);
 
   const shade = [false, 0];
   let start = true;
