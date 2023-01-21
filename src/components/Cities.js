@@ -49,7 +49,7 @@ const Cities = () => {
 
   const images = imagesx();
   useEffect(() => {
-    if (zones.length === 0) dispatch(getZones(cities[1]));
+    // if (zones.length === 0) dispatch(getZones(cities[1]));
   });
 
   return (
@@ -81,7 +81,7 @@ const Cities = () => {
         <div className="flex flex-row flex-wrap gap-0 striped">
           {
             zones.map((zone) => (
-              <div key={(`${uniqid()}`)} className="w-1/2 md:w-2/6 lg:w-1/4 h-52 relative p-5">
+              <div key={(`${uniqid()}`)} className={`w-1/2 md:w-2/6 lg:w-1/4 h-52 relative p-5 ${getShade()}`}>
                 {/* <div
                     style={{
                     backgroundImage: `url("${img09}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', filter: 'blur(0px)',
