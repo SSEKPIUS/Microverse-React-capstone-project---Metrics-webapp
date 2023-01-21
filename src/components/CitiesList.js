@@ -7,7 +7,7 @@ import uniqid from 'uniqid';
 import img09 from './images/09.png';
 
 const CitiesList = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const { zones } = useSelector((state) => state.zones);
   // useEffect(() => {
   // }, [zones]);

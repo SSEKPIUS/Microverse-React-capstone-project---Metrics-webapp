@@ -58,7 +58,7 @@ const Cities = () => {
           Zones BY Cities
           <span className=" font-thin ml-2">(Sroll Right)</span>
         </span>
-        <CitiesList images={images} />
+        <CitiesList />
       </div>
     </div>
   );
