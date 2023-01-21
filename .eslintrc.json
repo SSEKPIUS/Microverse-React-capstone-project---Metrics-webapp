@@ -19,7 +19,8 @@
       "react/react-in-jsx-scope": "off",
       "react/no-array-index-key": "off",
       "import/no-unresolved": "off",
-      "no-shadow": "off"
+      "no-shadow": "off",
+      "react-hooks/exhaustive-deps": "off"
     },
     "ignorePatterns": [
       "dist/",
