@@ -1,21 +1,10 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable no-unused-vars */
-/* eslint-disable max-len */
-// import { useEffect } from 'react';
-// import { useSelector } from 'react-redux';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import uniqid from 'uniqid';
-// import img09 from './images/09.png';
+import PropTypes from 'prop-types';
+import img09 from './images/09.png';
 
 const CitiesList = ({ zones }) => {
-  // let zones = [];
-  // const navigate = useNavigate();
-  // const { zones = [] } = useSelector((state) => state.zones);
-  // useEffect(() => {
-  //   CityZones = zones;
-  // }, [zones]);
-
+  const navigate = useNavigate();
   const shade = [false, 0];
   let start = true;
   const getShade = () => {
@@ -31,13 +20,12 @@ const CitiesList = ({ zones }) => {
     shade[1] += 1;
     return shade[0] === true ? 'striped' : '';
   };
-
   return (
     <div className="flex flex-row flex-wrap gap-0 striped">
       {
       zones.map((zone) => (
         <div key={(`${uniqid()}`)} className={`w-1/2 md:w-2/6 lg:w-1/4 h-52 relative p-5 ${getShade()}`}>
-          {/* <div
+          <div
             style={{
               backgroundImage: `url("${img09}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', filter: 'blur(0px)',
             }}
@@ -60,12 +48,16 @@ const CitiesList = ({ zones }) => {
               <span className=" text-black capitalize mr-2">lon:</span>
               {zone.lon}
             </span>
-          </div> */}
+          </div>
         </div>
       ))
       }
     </div>
   );
+};
+
+CitiesList.propTypes = {
+  zones: PropTypes.element.isRequired,
 };
 
 export default CitiesList;

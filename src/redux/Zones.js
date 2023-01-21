@@ -3,25 +3,18 @@ import { fetchZones } from './Fetch';
 
 const GET_ZONES = 'Dragons/Dragons/GET_ZONES';
 
-const initialState = {
-  zones: [],
-};
-
-const zonesReducer = (state = initialState, action) => {
+const zonesReducer = (state = { zone: [], zones: [] }, action) => {
   switch (action.type) {
     case `${GET_ZONES}/fulfilled`:
       return {
         ...state,
-        zones: action.payload,
+        zones: [...action.payload],
       };
     default:
       return state;
   }
 };
 
-export const getZones = createAsyncThunk(GET_ZONES, async (city) => {
-  const data = fetchZones(city);
-  return data;
-});
+export const getZones = createAsyncThunk(GET_ZONES, (city) => fetchZones(city));
 
 export default zonesReducer;
