@@ -1,4 +1,4 @@
-# Microverse-WebPack-Template
+# Metrics-webapp,
 Metrics webapp, 
 This React capstone project is about building a mobile web application to check a list of metrics (numeric values) that we will create making use of React and Redux.
 
@@ -61,7 +61,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Metrics-webapp] <a name="about-project"></a>
 
 > API that provides numeric data about a topic that i like and then build the webapp around it. The webapp will have several pages:
 
