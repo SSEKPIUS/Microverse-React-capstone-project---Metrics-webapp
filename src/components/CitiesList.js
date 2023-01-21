@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable max-len */
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -30,11 +32,8 @@ const CitiesList = () => {
     <div className="flex flex-row flex-wrap gap-0 striped">
       {
       zones.map((zone) => (
-        <div
-          key={(`${uniqid()}`)}
-          className={`w-1/2 md:w-2/6 lg:w-1/4 h-52 relative p-5 ${getShade()}`}
-        >
-          <div
+        <div key={(`${uniqid()}`)} className={`w-1/2 md:w-2/6 lg:w-1/4 h-52 relative p-5 ${getShade()}`}>
+          {/* <div
             style={{
               backgroundImage: `url("${img09}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', filter: 'blur(0px)',
             }}
@@ -57,7 +56,7 @@ const CitiesList = () => {
               <span className=" text-black capitalize mr-2">lon:</span>
               {zone.lon}
             </span>
-          </div>
+          </div> */}
         </div>
       ))
       }
