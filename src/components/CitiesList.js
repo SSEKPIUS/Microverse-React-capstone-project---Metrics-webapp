@@ -2,8 +2,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 /* eslint-disable max-len */
-import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+// import { useEffect } from 'react';
+// import { useSelector } from 'react-redux';
 // import { useNavigate } from 'react-router-dom';
 import uniqid from 'uniqid';
 // import img09 from './images/09.png';
