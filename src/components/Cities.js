@@ -58,7 +58,7 @@ const Cities = () => {
           Zones BY Cities
           <span className=" font-thin ml-2">(Sroll Right)</span>
         </span>
-        <CitiesList />
+        <CitiesList zones={[]} />
       </div>
     </div>
   );

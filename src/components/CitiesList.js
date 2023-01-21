@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 /* eslint-disable max-len */
@@ -7,10 +8,10 @@ import { useSelector } from 'react-redux';
 import uniqid from 'uniqid';
 // import img09 from './images/09.png';
 
-const CitiesList = () => {
-  // let CityZones = [];
+const CitiesList = ({ zones }) => {
+  // let zones = [];
   // const navigate = useNavigate();
-  const { zones = [] } = useSelector((state) => state.zones);
+  // const { zones = [] } = useSelector((state) => state.zones);
   // useEffect(() => {
   //   CityZones = zones;
   // }, [zones]);
