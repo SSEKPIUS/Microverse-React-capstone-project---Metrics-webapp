@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getZones } from '../redux/Zones';
 import imagesx from './images/Images';
-import CitiesList from './CitiesList';
+// import CitiesList from './CitiesList';
 
 const Cities = () => {
   const dispatch = useDispatch();
@@ -58,7 +58,7 @@ const Cities = () => {
           Zones BY Cities
           <span className=" font-thin ml-2">(Sroll Right)</span>
         </span>
-        <CitiesList images={images} />
+        {/* <CitiesList images={images} /> */}
       </div>
     </div>
   );
