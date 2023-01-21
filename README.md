@@ -220,7 +220,6 @@ If you like this project, kindly donate a token at [Paypal]()
 👤 **Original Design 1**
 - Original design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance.
 
-
 - I would like to thank microverse student team for the resorces availed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
