@@ -99,7 +99,7 @@ one page for the item details; in the example, the detail page for Czech Republi
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://sp-metrics-webapp.netlify.app)
+- [Live Demo Link](https://sp-metrics-app.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
