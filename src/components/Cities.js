@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { /* useSelector, */ useDispatch } from 'react-redux';
 import { getZones } from '../redux/Zones';
 import imagesx from './images/Images';
 import CitiesList from './CitiesList';
 
 const Cities = () => {
-  const { zones } = useSelector((state) => state.zones);
+  // const { zones } = useSelector((state) => state.zones);
   const dispatch = useDispatch();
   const cities = {
     1: 'London',
@@ -31,10 +31,10 @@ const Cities = () => {
   const images = imagesx();
   useEffect(() => {
     dispatch(getZones(cities[1]));
-  }, []);
+  });
 
-  useEffect(() => {
-  }, [zones]);
+  // useEffect(() => {
+  // }, [zones]);
 
   return (
     <div>

@@ -11,9 +11,9 @@ const City = () => {
   const { zone } = useSelector((state) => state.zone);
   useEffect(() => {
     dispatch(getZone({ lat, lon }));
-  }, []);
-  useEffect(() => {
-  }, [zone]);
+  });
+  // useEffect(() => {
+  // }, [zone]);
 
   return (
     <div>
