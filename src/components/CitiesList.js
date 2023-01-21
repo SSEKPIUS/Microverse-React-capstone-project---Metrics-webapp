@@ -7,26 +7,26 @@ import uniqid from 'uniqid';
 import img09 from './images/09.png';
 
 const CitiesList = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const { zones } = useSelector((state) => state.zones);
   // useEffect(() => {
   // }, [zones]);
 
-  const shade = [false, 0];
-  let start = true;
-  const getShade = () => {
-    if (start) {
-      start = false;
-      return 'striped';
-    }
-    if (shade[1] > 1) {
-      shade[0] = !shade[0];
-      shade[1] = -1;
-    }
-    shade[0] = shade[1] > 1 ? !shade[0] : shade[0];
-    shade[1] += 1;
-    return shade[0] === true ? 'striped' : '';
-  };
+  // const shade = [false, 0];
+  // let start = true;
+  // const getShade = () => {
+  //   if (start) {
+  //     start = false;
+  //     return 'striped';
+  //   }
+  //   if (shade[1] > 1) {
+  //     shade[0] = !shade[0];
+  //     shade[1] = -1;
+  //   }
+  //   shade[0] = shade[1] > 1 ? !shade[0] : shade[0];
+  //   shade[1] += 1;
+  //   return shade[0] === true ? 'striped' : '';
+  // };
 
   return (
     <div className="flex flex-row flex-wrap gap-0 striped">
