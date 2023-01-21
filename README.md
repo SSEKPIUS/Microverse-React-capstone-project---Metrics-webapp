@@ -31,7 +31,7 @@ After you're finished please remove all the comments and instructions!
   <img src="logo.png" alt="logo" width="140"  height="auto"/>
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Metrics webapp</b></h3>
 
 </div>
 
@@ -99,7 +99,7 @@ one page for the item details; in the example, the detail page for Czech Republi
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://sp-metrics-app.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -179,9 +179,6 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/SSEK_PIUS)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/pius-ssekweyama-23665794)
 
-👤 **Original Design 1**
-- Original design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -220,7 +217,10 @@ If you like this project, kindly donate a token at [Paypal]()
 
 > Credit to everyone who inspired this codebase.
 
-I would like to thank microverse student team for the resorces availed.
+👤 **Original Design 1**
+- Original design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance.
+
+- I would like to thank microverse student team for the resorces availed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
