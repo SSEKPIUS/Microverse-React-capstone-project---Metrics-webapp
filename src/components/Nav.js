@@ -34,7 +34,7 @@ const Navbar = () => {
             </span>
           )}
       </div>
-      <div className="basis-2/6 text-center capitalize text-lg">
+      <div className="basis-2/6 text-center capitalize text-lg header">
         {navPosition === 0
           ? <span className=" whitespace-nowrap">most views</span>
           : <span className=" whitespace-nowrap">town/city views</span>}
