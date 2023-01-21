@@ -33,12 +33,12 @@ const Navbar = () => {
             </span>
           )}
       </div>
-      <div className="basis-2/6 text-center capitalize text-lg header">
+      <div className="basis-2/6 text-center capitalize text-lg header ml-auto mr-auto">
         {navPosition === 0
           ? <span className=" whitespace-nowrap">most views</span>
           : <span className=" whitespace-nowrap">town/city views</span>}
       </div>
-      <div className="basis-2/6 pr-3">
+      <div className="basis-2/6 pr-3 ml-auto">
         <div className="ml-auto mr-0 max-w-fit flex">
           <span className="pr-4"><Mic /></span>
           <span><Settings /></span>
