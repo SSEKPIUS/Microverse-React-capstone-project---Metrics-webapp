@@ -20,7 +20,7 @@ const zonesReducer = (state = initialState, action) => {
 };
 
 export const getZones = createAsyncThunk(GET_ZONES, async (city) => {
-  const data = await fetchZones(city);
+  const data = fetchZones(city);
   return data;
 });
 
