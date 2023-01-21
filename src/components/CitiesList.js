@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable max-len */
-import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+// import React, { useEffect } from 'react';
+// import { useSelector } from 'react-redux';
+// import { useNavigate } from 'react-router-dom';
 import uniqid from 'uniqid';
-import img09 from './images/09.png';
+// import img09 from './images/09.png';
 
 const CitiesList = () => {
-  const navigate = useNavigate();
-  const { zones } = useSelector((state) => state.zones);
+  // const navigate = useNavigate();
+  const { zones } = { zones: [] }; // useSelector((state) => state.zones);
   // useEffect(() => {
   // }, [zones]);
 
