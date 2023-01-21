@@ -3,7 +3,7 @@ import uniqid from 'uniqid';
 import PropTypes from 'prop-types';
 import img09 from './images/09.png';
 
-const CitiesList = ({ zones }) => {
+const CitiesList = ({ zonesData }) => {
   const navigate = useNavigate();
   const shade = [false, 0];
   let start = true;
@@ -23,7 +23,7 @@ const CitiesList = ({ zones }) => {
   return (
     <div className="flex flex-row flex-wrap gap-0 striped">
       {
-      zones.map((zone) => (
+      zonesData.map((zone) => (
         <div key={(`${uniqid()}`)} className={`w-1/2 md:w-2/6 lg:w-1/4 h-52 relative p-5 ${getShade()}`}>
           <div
             style={{
@@ -57,7 +57,10 @@ const CitiesList = ({ zones }) => {
 };
 
 CitiesList.propTypes = {
-  zones: PropTypes.element.isRequired,
+  zonesData: PropTypes.instanceOf(Array),
+};
+CitiesList.defaultProps = {
+  zonesData: [],
 };
 
 export default CitiesList;
