@@ -6,6 +6,7 @@ import configureStore from 'redux-mock-store';
 import City from '../components/City';
 
 let store;
+
 const mockStore = configureStore([]);
 beforeEach(() => {
   store = mockStore({
