@@ -8,7 +8,7 @@ const zonesReducer = (state = { zone: [], zones: [] }, action) => {
     case `${GET_ZONES}/fulfilled`:
       return {
         ...state,
-        zones: [...action.payload],
+        zones: action.payload,
       };
     default:
       return state;
