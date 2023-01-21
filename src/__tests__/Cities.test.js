@@ -16,11 +16,14 @@ jest.mock('react-router-dom', () => ({
 jest.mock('axios', () => []);
 
 describe('<Cities Component />', () => {
-  it('should render Cities Component', () => {
-    shallow(
+  it('should render Cities Component', async () => {
+    const cities = await shallow(
       <Provider store={store}>
         <Cities />
       </Provider>,
     );
+    process.nextTick(() => {
+      expect(cities).toMatchSnapshot();
+    });
   });
 });

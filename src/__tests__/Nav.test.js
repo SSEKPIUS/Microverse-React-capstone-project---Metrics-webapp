@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from '../components/Nav';
 
-it('renders correctly', () => {
+it('Nav renders correctly', () => {
   const navbar = renderer
     .create(<Router><Navbar /></Router>)
     .toJSON();
