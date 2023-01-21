@@ -1,4 +1,4 @@
-# Microverse-WebPack-Template
+# Metrics-webapp,
 Metrics webapp, 
 This React capstone project is about building a mobile web application to check a list of metrics (numeric values) that we will create making use of React and Redux.
 
@@ -31,7 +31,7 @@ After you're finished please remove all the comments and instructions!
   <img src="logo.png" alt="logo" width="140"  height="auto"/>
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Metrics webapp</b></h3>
 
 </div>
 
@@ -61,7 +61,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Metrics-webapp] <a name="about-project"></a>
 
 > API that provides numeric data about a topic that i like and then build the webapp around it. The webapp will have several pages:
 
@@ -99,7 +99,7 @@ one page for the item details; in the example, the detail page for Czech Republi
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://sp-metrics-app.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,13 +155,6 @@ Example command:
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -178,7 +171,6 @@ Example:
 - GitHub: [@githubhandle](https://github.com/SSEKPIUS)
 - Twitter: [@twitterhandle](https://twitter.com/SSEK_PIUS)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/pius-ssekweyama-23665794)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -218,7 +210,10 @@ If you like this project, kindly donate a token at [Paypal]()
 
 > Credit to everyone who inspired this codebase.
 
-I would like to thank microverse student team for the resorces availed.
+👤 **Original Design 1**
+- Original design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance.
+
+- I would like to thank microverse student team for the resorces availed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
